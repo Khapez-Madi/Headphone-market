@@ -63,7 +63,7 @@ span {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    width: 90%;
+    width: 100%;
     max-width: 1000px;
     box-sizing: border-box;
     margin-left: auto;
@@ -71,7 +71,9 @@ span {
     padding: 0 15px;
     color: white;
     font-family: 'Roboto', sans-serif;
+    gap: 10px;
 }
+
 
 .korzina {
     width: 30px;
