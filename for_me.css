@@ -173,3 +173,47 @@ span {
     transform: scale(1);
     box-shadow: none;
 }
+
+@media (max-width: 320px) and (max-width: 425px) {
+    body {
+        width: 980px;
+    }
+
+    p {
+        font-size: 25px;
+    }
+
+    h3 {
+        font-size: 40px;
+    }
+
+    ul li a {
+        font-size: 35px;
+    }
+
+    .btn {
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+
+    .who_we {
+        min-height: 290vh;
+        height: auto;
+        display: flex;
+    }
+
+    h1 {
+        margin-bottom: 130px;
+    }
+
+    a {
+        width: 30px;
+        height: 30px;
+    }
+}
+
+@media (max-width: 768px) {
+    body {
+        width: 970px;
+    }
+}
