@@ -132,7 +132,7 @@ span {
 .btn {
     background-color: #1a4d66;
     text-decoration: none;
-    color: #3182AA;
+    color: white;
     padding: 15px 70px;
     border: none;
     margin-top: 50px;
@@ -161,4 +161,15 @@ span {
 
 .social-icons a:hover {
     color: #3182AA;
+}
+
+.btn:hover {
+    background-color: #2980b9;
+    transform: scale(1.1);
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+}
+
+.btn:active {
+    transform: scale(1);
+    box-shadow: none;
 }
