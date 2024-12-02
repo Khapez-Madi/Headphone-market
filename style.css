@@ -50,7 +50,8 @@ span {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 100px;
+    min-height: 100px;
+    height: auto;
     font-size: 20px;
     background-color: #000;
     border-bottom: 1px solid #1a4d66;
@@ -72,12 +73,15 @@ span {
     color: white;
     font-family: 'Roboto', sans-serif;
     gap: 10px;
+    height: auto;
 }
 
 
 .korzina {
-    width: 30px;
-    height: 30px;
+    max-width: 30px;
+    width: auto;
+    min-height: 30px;
+    height: auto;
 }
 
 .slides {
@@ -85,14 +89,18 @@ span {
 }
 
 .slides img {
-    width: 100px;
-    height: 100px;
+    max-width: 100px;
+    width: auto;
+    min-height: 100px;
+    height: auto;
 }
 
 .slider {
     position: relative;
-    width: 600px;
-    height: 400px;
+    max-width: 600px;
+    width: auto;
+    min-height: 400px;
+    height: auto;
     overflow: hidden;
 }
 
@@ -107,17 +115,20 @@ input[type="radio"] {
 }
 
 .slide {
-    width: 33.33%;
-    height: 80%;
+    max-width: 33.33%;
+    width: auto;
+    min-height: 80%;
+    height: auto;
 }
 
 .slide img {
-    width: 100%;
-    height: 100%;
+    max-width: 100%;
+    width: auto;
+    min-height: 100%;
+    height: auto;
     object-fit: cover;
 }
 
-/* Переключение слайдов с помощью радиокнопок */
 input#slide1:checked~.slides {
     transform: translateX(0);
 }
@@ -154,7 +165,8 @@ input#slide3:checked~.slides {
 /* ! welcome */
 .welcome {
     display: flex;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
 }
 
 .welcome_section {
@@ -176,9 +188,11 @@ input#slide3:checked~.slides {
     flex-direction: column;
     align-items: center;
     justify-content: center;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     color: white;
     margin-left: 20px;
+    background-color: #000;
 }
 
 .welcome_text h1 {
@@ -205,7 +219,8 @@ input#slide3:checked~.slides {
 /* ! recomended */
 .recomended_section {
     background-color: white;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     font-family: 'Roboto', sans-serif;
 }
 
@@ -214,7 +229,8 @@ input#slide3:checked~.slides {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100vh;
+    max-width: 100vh;
+    width: auto;
     color: #1a4d66;
     text-align: center;
 }
@@ -222,7 +238,8 @@ input#slide3:checked~.slides {
 .recomended {
     display: flex;
     width: 950px;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     justify-content: center;
     align-items: center;
 }
@@ -240,7 +257,8 @@ input#slide3:checked~.slides {
 /* !  possibilities */
 .possibilities_section {
     background-color: #012128;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     padding: 100px 0;
 }
 
@@ -249,7 +267,8 @@ input#slide3:checked~.slides {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
 }
 
 .possibilities h1 {
@@ -279,7 +298,8 @@ input#slide3:checked~.slides {
     display: flex;
     justify-content: center;
     align-items: center;
-    height: 50vh;
+    min-height: 50vh;
+    height: auto;
     margin-bottom: 50px;
 }
 
@@ -298,7 +318,8 @@ input#slide3:checked~.slides {
 /* !connection */
 .connection_section {
     background-color: white;
-    height: 100vh;
+    min-height: 100vh;
+    height: auto;
     color: #1a4d66;
     padding: 100px 0;
 }
@@ -382,6 +403,7 @@ textarea {
     background-color: #000;
     height: 100px;
     padding-top: 20px;
+    position: sticky;
 }
 
 .social-icons {
@@ -431,4 +453,20 @@ textarea {
 .input_container {
     display: flex;
     align-items: center;
+}
+
+@media (max-width: 768px) {
+    body {
+        font-size: 15px;
+        width: 1050px;
+    }
+
+    .container {
+        max-width: 2000px;
+        width: 100%;
+    }
+
+    html {
+        width: 1000px;
+    }
 }
